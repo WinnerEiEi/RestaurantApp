@@ -24,8 +24,9 @@ namespace RestaurantApp
             {
                 Console.WriteLine($"{item.Name} Type:{item.Type} -- {item.Rate}");
             }
-
-            Console.WriteLine("Yaso");
+            Console.WriteLine($"Total restaurants: {restaurants.Count}");
+            double averageRate = restaurants.Average(item => item.Rate);
+            Console.WriteLine($"Average rating: {averageRate:F2}");
         }
     }
     public class Restaurant
