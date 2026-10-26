@@ -26,7 +26,7 @@ namespace RestaurantApp
             }
             Console.WriteLine($"Total restaurants: {restaurants.Count}");
             double averageRate = restaurants.Average(item => item.Rate)
-
+            9999
             Console.WriteLine("Yaso");
         }
     }
